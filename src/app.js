@@ -174,7 +174,7 @@ var Ship = cc.Sprite.extend({
     this.ySpeed += gameGravity;
 
     //宇宙船が画面外にでたら、リスタートさせる
-    if (this.getPosition().y < 0 || this.getPosition().y > 320) {
+    if (this.getPosition().y < 0 || this.getPosition().y > 568) {
       restartGame();
 
     }
