@@ -134,7 +134,7 @@ var ScrollingBG = cc.Sprite.extend({
     this.setPosition(this.getPosition().x - scrollSpeed, this.getPosition().y);
     //画面の端に到達したら反対側の座標にする
     if (this.getPosition().x < 0) {
-      this.setPosition(this.getPosition().x + 480, this.getPosition().y);
+      this.setPosition(this.getPosition().x + 320, this.getPosition().y);
     }
   }
 });
@@ -157,7 +157,7 @@ var Ship = cc.Sprite.extend({
     if (this.engineOn) {
       this.ySpeed += gameThrust;
       //ここでパーティクルエフェクトを宇宙船のすぐ後ろに配置している
-      emitter.setPosition(this.getPosition().x - 25, this.getPosition().y);
+      emitter.setPosition(this.getPosition().x + 25, this.getPosition().y);
     } else {
       //エンジンOffのときは画面外に配置
       emitter.setPosition(this.getPosition().x - 250, this.getPosition().y);
@@ -188,8 +188,8 @@ var Asteroid = cc.Sprite.extend({
   },
   onEnter: function() {
     this._super();
-    this.setPosition(600, Math.random() * 320);
-    var moveAction = cc.MoveTo.create(2.5, new cc.Point(-100, Math.random() * 320));
+    this.setPosition(600, Math.random() * 568);
+    var moveAction = cc.MoveTo.create(2.5, new cc.Point(-100, Math.random() * 550));
     this.runAction(moveAction);
     this.scheduleUpdate();
   },
