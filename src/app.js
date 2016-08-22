@@ -8,7 +8,7 @@ var gameLayer;
 var background;
 var scrollSpeed = 1;
 var score = 0;
-var HP = 5;
+var HP = 3;
 //宇宙船で追加した部分　重力
 var ship;
 var i =0;
@@ -445,7 +445,7 @@ function restartGame() {
 
   if(HP < 0){
 
-    HP = 5;
+    HP = 3;
     //BGM終わり
       audioEngine.stopMusic();
       audioEngine.stopAllEffects();
