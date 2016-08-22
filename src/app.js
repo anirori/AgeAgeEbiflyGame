@@ -272,12 +272,6 @@ var Ship = cc.Sprite.extend({
       this.ySpeed += gameThrust;
       //ここでパーティクルエフェクトを宇宙船のすぐ後ろに配置している
       emitter.setPosition(this.getPosition().x - 25, this.getPosition().y);
-      //バタバタアニメーション
-      i+=1;
-      if(i==2){this.initWithFile(res.shrimp02_png);}
-      if(i==3){this.initWithFile(res.shrimp03_png);}
-      if(i==4){this.initWithFile(res.shrimp04_png);}
-      if(i==5){i=1}
 
     } else {
       //エンジンOffのときは画面外に配置
@@ -443,7 +437,7 @@ function restartGame() {
   HP --;
   hpdisp.removeChildByTag(HP);
 
-  if(HP < 0){
+  if(HP < 1){
 
     HP = 3;
     //BGM終わり

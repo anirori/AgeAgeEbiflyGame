@@ -8,7 +8,7 @@ var ThirdLayer = cc.Layer.extend({
         gameoverBG_png.setPosition(size.width / 2, size.height / 2);
         this.addChild(gameoverBG_png);
 
-        var label = cc.LabelTTF.create("GAME OVER", "怨霊", 60);
+        var label = cc.LabelTTF.create("GAME OVER", "ゲームオーバー", 60);
         label.setPosition(size.width / 2, size.height * 4 / 5);
         this.addChild(label, 1);
 

@@ -4,8 +4,7 @@ var res = {
     underrock_png:"res/rock_under.png",
     up_png:"res/ceiling.png",
     under_png:"res/land.png",
-    particle_texture:"res/particle_texture.png",//パーティクル
-    particle_plist:"res/particle_texture.plist",//パーティクル
+    particle_texture:"res/particle.png",//パーティクル
     TitleBG_png:"res/ocean.png",
     Title_png:"res/Title.png",
     start_png:"res/start.png",
@@ -26,12 +25,12 @@ var res = {
     //ここまで珊瑚ゾーン
 
     //こっから音楽
-    bgm_title:"res/wave.mp3",
-    bgm_main:"res/初陣.m4a",
-    se_swim:"res/swim.mp3",
-    se_get:"res/se_get.mp3",
+    bgm_title:"res/bgm_title.mp3",
+    bgm_main:"res/bgm_main.mp3",
+    se_swim:"res/se_flee1.mp3",
+    se_get:"res/se_bang.mp3",
     se_miss:"res/se_surprise.mp3",
-    se_death:"res/Death.mp3",
+    se_death:"res/se_decide.mp3",
 };
 
 var g_resources = [];
